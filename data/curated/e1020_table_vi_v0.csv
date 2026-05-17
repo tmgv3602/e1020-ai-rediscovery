@@ -1,0 +1,36 @@
+compound_id,source_table,number_of_experiments,dose_mg_per_kg,lv_dpdt_pct_change,hr_pct_change,map_pct_change,ed50_ug_per_kg,ed50_relation,ed50_error,notes,ed50_censored,active_class,iv_potency_class
+3a,Table VI,5,0.1,75,18,-17,52,=,10.0,,none,moderate,moderate
+3b,Table VI,2,0.3,15,4,-5,300,>,,,right,weak,weak
+3c,Table VI,2,0.1,22,11,-15,300,>,,,right,weak,weak
+3d,Table VI,2,0.3,19,3,-12,300,>,,,right,weak,weak
+3e,Table VI,3,0.1,97,27,-27,31,=,14.0,,none,moderate,moderate
+3f,Table VI,3,0.1,60,36,-15,58,=,11.0,,none,moderate,moderate
+3g,Table VI,2,0.1,86,9,-12,32,=,,,none,moderate,moderate
+3h,Table VI,2,0.3,26,-1,-10,300,>,,,right,weak,weak
+3i,Table VI,2,0.3,47,6,-8,300,>,,,right,weak,weak
+3j,Table VI,2,0.3,16,4,-3,300,>,,,right,weak,weak
+3k,Table VI,2,0.3,84,26,-9,123,=,,,none,weak,weak
+3l,Table VI,2,0.3,12,9,-6,300,>,,,right,weak,weak
+3m,Table VI,2,0.3,43,18,-18,195,=,,,none,weak,weak
+3n,Table VI,3,0.1,82,30,-27,33,=,6.0,,none,moderate,moderate
+3o,Table VI,2,0.1,31,19,-8,177,=,,,none,weak,weak
+3p,Table VI,2,0.3,57,23,-30,193,=,,,none,weak,weak
+3q,Table VI,2,0.3,62,22,-40,27,=,,,none,strong,strong
+3r,Table VI,2,0.3,25,8,-10,300,>,,,right,weak,weak
+3s,Table VI,2,0.3,17,11,-7,300,>,,,right,weak,weak
+3t,Table VI,2,0.1,47,21,-32,91,=,,,none,moderate,moderate
+3u,Table VI,2,0.03,86,32,-31,11,=,,,none,strong,strong
+11a,Table VI,6,0.1,99,28,-9,23,=,2.0,E-1020 free base / hydrochloride monohydrate selected later,none,strong,strong
+11b,Table VI,2,0.1,131,40,-21,18,=,,,none,strong,strong
+11c,Table VI,2,0.3,30,10,-10,300,>,,,right,weak,weak
+11d,Table VI,2,0.3,57,14,-7,218,=,,,none,weak,weak
+11e,Table VI,2,1.0,30,9,-8,1000,>,,,right,weak,weak
+11f,Table VI,2,0.1,89,17,-9,52,=,,,none,moderate,moderate
+11g,Table VI,2,0.1,24,13,-21,197,=,,,none,weak,weak
+12,Table VI,2,0.3,76,12,-13,172,=,,,none,weak,weak
+13,Table VI,2,0.1,52,12,-21,87,=,,,none,moderate,moderate
+18,Table VI,2,1.0,43,8,1,1000,>,,,right,weak,weak
+23,Table VI,2,1.0,25,11,-11,1000,>,,7-yl isomer; weak activity,right,weak,weak
+32a,Table VI,2,0.3,5,8,7,300,>,,,right,weak,weak
+32b,Table VI,2,1.0,6,3,1,1000,>,,,right,weak,weak
+Milrinone,Table VI,6,0.1,98,33,-18,25,=,6.0,reference drug,none,strong,strong

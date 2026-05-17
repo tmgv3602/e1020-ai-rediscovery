@@ -1,0 +1,14 @@
+[project]
+name = "e1020-ai-rediscovery"
+version = "0.1.0"
+description = "Retrospective cheminformatics study of E-1020 discovery from historical SAR data."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Takahiro Yamanaka"}
+]
+keywords = ["E-1020", "loprinone", "olprinone", "cheminformatics", "SAR", "AI drug discovery"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

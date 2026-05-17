@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+
+# Data policy
+data/raw/*.pdf
+data/raw/*.png
+data/raw/*.jpg
+data/raw/*.jpeg
+data/raw/*.tif
+data/raw/*.tiff
+
+# Outputs
+outputs/

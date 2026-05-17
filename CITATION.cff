@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this repository or dataset, please cite it as below and also cite the original 1991 paper."
+title: "E-1020 AI Rediscovery: Historical SAR Dataset and Retrospective Cheminformatics Study"
+type: dataset
+authors:
+  - family-names: "Yamanaka"
+    given-names: "Takahiro"
+version: "0.1.0"
+date-released: "2026-05-17"
+repository-code: "https://github.com/tacahiro-yamanaka/e1020-ai-rediscovery"
+keywords:
+  - E-1020
+  - loprinone
+  - olprinone
+  - cheminformatics
+  - structure-activity relationship
+  - AI drug discovery
+  - historical SAR
+references:
+  - type: article
+    authors:
+      - family-names: "Yamanaka"
+        given-names: "Motosuke"
+      - family-names: "Miyake"
+        given-names: "Kazutoshi"
+      - family-names: "Suda"
+        given-names: "Shinji"
+      - family-names: "Ohhara"
+        given-names: "Hideto"
+      - family-names: "Ogawa"
+        given-names: "Toshiaki"
+    title: "Imidazo[1,2-a]pyridines. I. Synthesis and inotropic activity of new 5-imidazo[1,2-a]pyridinyl-2(1H)-pyridinone derivatives"
+    journal: "Chemical and Pharmaceutical Bulletin"
+    year: 1991
+    volume: 39
+    issue: 6
+    start: 1556
+    end: 1567
+    doi: "10.1248/cpb.39.1556"
