@@ -120,18 +120,84 @@ Table IX: PDE I / II / III inhibition data
 Tables I, IV, V: structure and analog metadata
 ```
 
-## Planned analyses
+## Revised roadmap
 
-1. Verify Table VI dataset against the source paper
-2. Generate ED50 rankings
-3. Compare E-1020 / 11a with milrinone
-4. Analyze the 11a versus 23 activity cliff
-5. Curate Table VIII oral-duration data
-6. Curate Table IX PDE inhibition data
-7. Add compound structure metadata from Tables I, IV, and V
-8. Curate SMILES for E-1020, key analogs, and reference compounds
-9. Run RDKit fingerprint and Tanimoto similarity analyses
-10. Perform retrospective hold-out experiments: can baseline models rank E-1020 highly when it is hidden?
+This project is now positioned as both:
+
+1. a retrospective computational study of the historical E-1020 discovery logic, and
+2. a beginner-oriented learning project for AI-assisted drug-discovery data science.
+
+The roadmap is organized into seven phases.
+
+### Phase 0 — Public repositioning and transparency
+
+- Clarify that this is an AI-assisted independent research and learning project.
+- Add `AI_USE.md`.
+- Add `NON_EXPERT_POSITION.md`.
+- Add `LEARNING_ROADMAP.md`.
+- Add `BUSINESS_IMPLICATIONS.md`.
+- Confirm that no original article PDFs, scanned pages, screenshots, or publisher figures are redistributed.
+
+### Phase 1 — Table VI verification and curation quality
+
+- Re-check every row of `data/curated/e1020_table_vi_v0.csv` against Table VI.
+- Confirm compound IDs, doses, cardiovascular response values, and ED50 values.
+- Confirm right-censored ED50 values such as `>300` and `>1000`.
+- Add or refine `curation_status` fields:
+  - `manual_checked`
+  - `needs_review`
+  - `ambiguous`
+  - `derived`
+- Treat this phase as the minimum requirement before a formal v0.1.0 release.
+
+### Phase 2 — Learning from ED50 rankings
+
+- Generate ED50 rankings.
+- Explain ED50, potency, right-censoring, and coarse activity labels.
+- Emphasize that `iv_potency_class` is only a Table VI IV potency label, not a claim of drug-likeness, clinical value, safety, or therapeutic superiority.
+- Create a beginner-friendly notebook showing how raw table values become analysis-ready data.
+
+### Phase 3 — From simple ranking to medicinal-chemistry judgment
+
+- Compare E-1020 / 11a with milrinone.
+- Compare E-1020 / 11a with compound 23, the 7-yl isomer.
+- Analyze the 11a versus 23 activity cliff.
+- Show why E-1020 selection cannot be explained by ED50 ranking alone.
+- Introduce the idea of multi-objective decision-making in drug discovery.
+
+### Phase 4 — Multi-objective pharmacology dataset
+
+- Curate Table VIII oral-duration data.
+- Curate Table IX PDE I / PDE II / PDE III inhibition data.
+- Compare potency, heart-rate effect, blood-pressure effect, oral duration, and PDE selectivity.
+- Build a more complete view of the historical selection logic.
+
+### Phase 5 — Structure metadata and cheminformatics preparation
+
+- Add compound structure metadata from Tables I, IV, and V.
+- Curate SMILES for E-1020 / 11a, key analogs, compound 23, milrinone, and reference compounds.
+- Validate structures with RDKit.
+- Mark uncertain structures as `needs_review` rather than forcing premature certainty.
+
+### Phase 6 — Cheminformatics and baseline machine learning
+
+- Compute molecular fingerprints.
+- Calculate Tanimoto similarity.
+- Analyze whether structural similarity explains or fails to explain activity differences.
+- Run simple baseline models only after structure and pharmacology data are sufficiently curated.
+- Perform retrospective hold-out experiments:
+  - hide E-1020 / 11a
+  - train simple baselines
+  - test whether E-1020 ranks highly
+  - report both successes and failures
+
+### Phase 7 — Teaching, release, and broader implications
+
+- Convert notebooks into beginner-friendly learning modules.
+- Prepare v0.1.0 as a Table VI educational dataset release.
+- Consider Zenodo or OSF only after verification.
+- Develop business and educational implications cautiously.
+- Avoid claiming that AI has rediscovered E-1020.
 
 ## Repository structure
 
