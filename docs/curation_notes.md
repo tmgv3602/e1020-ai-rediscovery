@@ -32,3 +32,23 @@ Known limitations:
   - `needs_review`
   - `ambiguous`
   - `derived`
+
+## Table VI verification
+
+Table VI was manually re-checked against the source paper.
+
+Verification scope:
+
+- compound IDs
+- number of experiments
+- dose values
+- LVDp/dtmax percent changes
+- heart-rate percent changes
+- mean arterial pressure percent changes
+- ED50 values
+- ED50 relation symbols such as `>`
+- right-censoring treatment for threshold ED50 values
+
+Rows confirmed against the source table were marked as `manual_checked`.
+
+Rows requiring further review, if any, remain marked as `needs_review` or `ambiguous`.

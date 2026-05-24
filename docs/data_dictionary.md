@@ -18,7 +18,8 @@
 | `ed50_censored` | `none` for exact ED50, `right` for right-censored ED50. |
 | `active_class` | Alias of iv_potency_class retained for compatibility; prefer iv_potency_class. |
 | `iv_potency_class` | Coarse derived label from Table VI ED50: strong, moderate, or weak. |
-
+| `curation_status` | Curation status for the row. Typical values are `needs_review`, `manual_checked`, and `ambiguous`. This status mainly refers to source-table verification of the original Table VI values. |
+| `curation_note` | Free-text note describing source verification, uncertainty, or derived-value handling. |
 ## Derived-label rule
 
 `iv_potency_class` is derived as follows:
